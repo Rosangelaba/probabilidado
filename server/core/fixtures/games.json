@@ -1,0 +1,11 @@
+[
+  {
+    "model": "core.game",
+    "pk": 1,
+    "fields": {
+      "name": "Trivia",
+      "app": "trivia",
+      "max_players": 8,
+    }
+  },
+]
