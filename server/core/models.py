@@ -28,7 +28,7 @@ class Room(models.Model):
 
 
 class Player(models.Model):
-    room = models.ManyToMany(Room, on_delete=models.CASCADE)
+    room = models.ManyToManyField(Room)
     active   = models.BooleanField(default=True)
 
 
