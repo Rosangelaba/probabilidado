@@ -28,6 +28,7 @@ class Room(models.Model):
 
 
 class Player(models.Model):
+    # YKL: check how to do it with sessions!
     room = models.ManyToManyField(Room)
     active   = models.BooleanField(default=True)
 
