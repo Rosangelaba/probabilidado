@@ -1,3 +1,4 @@
 py_env/
 __pycache__/
 migrations/
+db.sqlite3
