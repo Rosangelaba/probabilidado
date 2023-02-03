@@ -1,14 +1,5 @@
 [
   {
-    "model": "core.game",
-    "pk": 1,
-    "fields": {
-      "name": "CombinaDados",
-      "app": "probdado",
-      "max_players": 64
-    }
-  },
-  {
     "model": "probdado.combinacao",
     "pk": 1,
     "fields": {
@@ -321,9 +312,9 @@
     "model": "probdado.dica",
     "pk": 3,
     "fields": {
-      "text": "as cores dos números são diferentes",
+      "text": "pelo menos um dos números é par",
       "combinacoes": [
-        1
+        2, 4, 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 19, 20, 21, 22, 23, 24, 26, 28, 30, 31, 32, 33, 34, 35, 36
       ]
     }
   },
@@ -331,9 +322,9 @@
     "model": "probdado.dica",
     "pk": 4,
     "fields": {
-      "text": "está no Q2",
+      "text": "os dois números são pares",
       "combinacoes": [
-        1
+       8, 10, 12, 20, 22, 24, 32, 34, 36
       ]
     }
   },
@@ -341,9 +332,9 @@
     "model": "probdado.dica",
     "pk": 5,
     "fields": {
-      "text": "está em uma casa vermelha",
+      "text": "o primeiro número é menor que o segundo",
       "combinacoes": [
-        1
+        2, 3, 4, 5, 6, 9, 10, 11, 12, 16, 17, 18, 23, 24, 30
       ]
     }
   },
@@ -351,9 +342,9 @@
     "model": "probdado.dica",
     "pk": 6,
     "fields": {
-      "text": "a soma dos números é menor que 6",
+      "text": "o primeiro número é maior que o segundo",
       "combinacoes": [
-        1
+        7, 13, 14, 19, 20, 21, 25, 26, 27, 28, 31, 32, 33, 34
       ]
     }
   },
@@ -361,9 +352,9 @@
     "model": "probdado.dica",
     "pk": 7,
     "fields": {
-      "text": "o produto entre eles é ímpar",
+      "text": "o primeiro número é divisor do segundo",
       "combinacoes": [
-        1
+        1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 18, 22, 29, 36
       ]
     }
   },
@@ -371,9 +362,9 @@
     "model": "probdado.dica",
     "pk": 8,
     "fields": {
-      "text": "os números são iguais",
+      "text": "o primeiro número é múltiplo do segundo",
       "combinacoes": [
-        1
+        1, 7, 8, 13, 15, 19, 20, 22, 25, 29, 31, 32, 33, 36
       ]
     }
   },
@@ -381,9 +372,9 @@
     "model": "probdado.dica",
     "pk": 9,
     "fields": {
-      "text": "um dos números é ímpar",
+      "text": "o produto entre eles é par",
       "combinacoes": [
-        2
+        2, 4, 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 19, 20, 21, 22, 23, 24, 26, 28, 30, 31, 32, 33, 34, 35, 36
       ]
     }
   },
@@ -391,9 +382,9 @@
     "model": "probdado.dica",
     "pk": 10,
     "fields": {
-      "text": "um dos números é primo",
+      "text": "o produto entre eles é ímpar",
       "combinacoes": [
-        2
+        1, 3, 5, 13, 15, 17, 25, 27, 29
       ]
     }
   },
@@ -401,9 +392,9 @@
     "model": "probdado.dica",
     "pk": 11,
     "fields": {
-      "text": "as cores dos números são iguais",
+      "text": "os números são iguais",
       "combinacoes": [
-        2
+        1, 8, 15, 22, 29, 36
       ]
     }
   },
@@ -411,9 +402,9 @@
     "model": "probdado.dica",
     "pk": 12,
     "fields": {
-      "text": "está no Q2",
+      "text": "os números são diferentes",
       "combinacoes": [
-        2
+        2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26, 27, 28, 30, 31, 32, 33, 33, 35
       ]
     }
   },
@@ -421,9 +412,9 @@
     "model": "probdado.dica",
     "pk": 13,
     "fields": {
-      "text": "está em uma casa azul",
+      "text": "os números são múltiplos de 2",
       "combinacoes": [
-        2
+        8, 10,12, 20, 22, 24, 32, 34, 36
       ]
     }
   },
@@ -431,9 +422,9 @@
     "model": "probdado.dica",
     "pk": 14,
     "fields": {
-      "text": "a soma dos números é menor que 6",
+      "text": "os números são múltiplos de 3",
       "combinacoes": [
-        2
+        15, 18, 33, 36
       ]
     }
   },
@@ -441,9 +432,9 @@
     "model": "probdado.dica",
     "pk": 15,
     "fields": {
-      "text": "o produto entre eles é par",
+      "text": "um dos números é primo",
       "combinacoes": [
-        2
+        2, 3, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 23, 25, 26, 27, 28, 29, 30, 32, 33, 35
       ]
     }
   },
@@ -451,9 +442,9 @@
     "model": "probdado.dica",
     "pk": 16,
     "fields": {
-      "text": "os números são diferentes",
+      "text": "os números são primos entre si",
       "combinacoes": [
-        2
+        9, 11, 14, 17, 26, 27
       ]
     }
   },
@@ -461,9 +452,9 @@
     "model": "probdado.dica",
     "pk": 17,
     "fields": {
-      "text": "o primeiro número é menor que o segundo",
+      "text": "os números são consecutivos",
       "combinacoes": [
-        2
+        2, 9, 16, 23, 30
       ]
     }
   },
@@ -471,9 +462,9 @@
     "model": "probdado.dica",
     "pk": 18,
     "fields": {
-      "text": "pelo menos um dos números é ímpar",
+      "text": "a soma deles é igual a 3",
       "combinacoes": [
-        7
+        2, 7
       ]
     }
   },
@@ -481,9 +472,9 @@
     "model": "probdado.dica",
     "pk": 19,
     "fields": {
-      "text": "um dos números é primo",
+      "text": "a soma deles é igual a 4",
       "combinacoes": [
-        7
+        3, 8, 13
       ]
     }
   },
@@ -491,9 +482,9 @@
     "model": "probdado.dica",
     "pk": 20,
     "fields": {
-      "text": "as cores dos números são iguais",
+      "text": "a soma deles é igual a 5",
       "combinacoes": [
-        7
+        4, 9, 14, 19
       ]
     }
   },
@@ -501,9 +492,9 @@
     "model": "probdado.dica",
     "pk": 21,
     "fields": {
-      "text": "está no Q2",
+      "text": "a soma deles é igual a 6",
       "combinacoes": [
-        7
+        5, 10, 15, 20, 25
       ]
     }
   },
@@ -511,9 +502,9 @@
     "model": "probdado.dica",
     "pk": 22,
     "fields": {
-      "text": "está em uma casa azul",
+      "text": "a soma deles é igual a 7",
       "combinacoes": [
-        7
+        6, 11, 16, 21, 26, 31
       ]
     }
   },
@@ -521,9 +512,9 @@
     "model": "probdado.dica",
     "pk": 23,
     "fields": {
-      "text": "a soma dos números é menor que 6",
+      "text": "a soma deles é igual a 8",
       "combinacoes": [
-        7
+        12, 17, 22, 27, 32
       ]
     }
   },
@@ -531,9 +522,9 @@
     "model": "probdado.dica",
     "pk": 24,
     "fields": {
-      "text": "o produto entre eles é par",
+      "text": "a soma deles é igual a 9",
       "combinacoes": [
-        7
+        18, 23, 28, 33
       ]
     }
   },
@@ -541,9 +532,9 @@
     "model": "probdado.dica",
     "pk": 25,
     "fields": {
-      "text": "os números são diferentes",
+      "text": "a soma deles é igual a 10",
       "combinacoes": [
-        7
+        24, 29, 34
       ]
     }
   },
@@ -551,9 +542,9 @@
     "model": "probdado.dica",
     "pk": 26,
     "fields": {
-      "text": "o primeiro número é maior que o segundo",
+      "text": "a soma deles é igual a 11",
       "combinacoes": [
-        7
+        30, 35
       ]
     }
   },
@@ -561,9 +552,9 @@
     "model": "probdado.dica",
     "pk": 27,
     "fields": {
-      "text": "pelo menos um dos números é ímpar",
+      "text": "as cores dos números são iguais",
       "combinacoes": [
-        3
+        2, 4, 6, 7, 9, 11, 14, 16, 18, 19, 21, 23, 26, 28, 30, 31, 33, 35
       ]
     }
   },
@@ -571,9 +562,9 @@
     "model": "probdado.dica",
     "pk": 28,
     "fields": {
-      "text": "os dois números são ímpares",
+      "text": "as cores dos números são diferentes",
       "combinacoes": [
-        3
+        1, 3, 5, 8, 10, 12,13, 15, 17, 20, 22, 24, 25, 27, 29, 32, 34, 36
       ]
     }
   },
@@ -581,9 +572,9 @@
     "model": "probdado.dica",
     "pk": 29,
     "fields": {
-      "text": "as cores dos números são diferentes",
+      "text": "estão em uma casa azul",
       "combinacoes": [
-        3
+        2, 5, 7, 9, 10, 12, 14, 17, 20, 23, 25, 27, 28, 30, 32, 35
       ]
     }
   },
@@ -591,9 +582,9 @@
     "model": "probdado.dica",
     "pk": 30,
     "fields": {
-      "text": "está no Q2",
+      "text": "estão em uma casa verde ",
       "combinacoes": [
-        3
+        3, 4, 13, 18, 19, 24, 33, 34)
       ]
     }
   },
@@ -601,9 +592,9 @@
     "model": "probdado.dica",
     "pk": 31,
     "fields": {
-      "text": "está em uma casa verde",
+      "text": "estão em uma casa vermelha",
       "combinacoes": [
-        3
+        1, 8, 15, 22, 29, 36, 6, 11, 16, 21, 26, 31
       ]
     }
   },
@@ -611,9 +602,9 @@
     "model": "probdado.dica",
     "pk": 32,
     "fields": {
-      "text": "a soma dos números é menor que 6",
+      "text": "estão no primeiro quadrante - Q1",
       "combinacoes": [
-        3
+        4, 5, 6, 10, 11, 12, 16, 17, 18
       ]
     }
   },
@@ -621,9 +612,9 @@
     "model": "probdado.dica",
     "pk": 33,
     "fields": {
-      "text": "o produto entre eles é ímpar",
+      "text": "estão no segundo quadrante - Q2",
       "combinacoes": [
-        3
+        1, 2, 3, 7, 8, 9, 13, 14, 15
       ]
     }
   },
@@ -631,19 +622,19 @@
     "model": "probdado.dica",
     "pk": 34,
     "fields": {
-      "text": "os números são diferentes",
+      "text": "estão no terceiro quadrante - Q3",
       "combinacoes": [
-        3
+        19, 20, 21, 25, 26, 27, 31, 32, 33
       ]
     }
   },
-  {
+ {
     "model": "probdado.dica",
     "pk": 35,
     "fields": {
-      "text": "pelo menos um dos números é ímpar",
+      "text": "estão no quarto quadrante - Q4",
       "combinacoes": [
-        13
+        22, 23, 24, 28, 29, 30, 34, 35, 36
       ]
     }
   },
@@ -651,2479 +642,9 @@
     "model": "probdado.dica",
     "pk": 36,
     "fields": {
-      "text": "os dois números são ímpares",
+      "text": "",
       "combinacoes": [
         13
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 37,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        13
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 38,
-    "fields": {
-      "text": "está no Q2",
-      "combinacoes": [
-        13
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 39,
-    "fields": {
-      "text": "a soma dos números é menor que 6",
-      "combinacoes": [
-        13
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 40,
-    "fields": {
-      "text": "O produto entre eles é ímpar",
-      "combinacoes": [
-        13
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 41,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        13
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 42,
-    "fields": {
-      "text": "um dos números é par",
-      "combinacoes": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 43,
-    "fields": {
-      "text": "o primeiro número é menor que o segundo",
-      "combinacoes": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 44,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 45,
-    "fields": {
-      "text": "está no Q1",
-      "combinacoes": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 46,
-    "fields": {
-      "text": "está em uma casa verde",
-      "combinacoes": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 47,
-    "fields": {
-      "text": "a soma dos números é menor que 6",
-      "combinacoes": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 48,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 49,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 50,
-    "fields": {
-      "text": "o primeiro número é maior que o segundo",
-      "combinacoes": [
-        19
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 51,
-    "fields": {
-      "text": "um dos números é par",
-      "combinacoes": [
-        19
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 52,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        19
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 53,
-    "fields": {
-      "text": "está no Q1",
-      "combinacoes": [
-        19
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 54,
-    "fields": {
-      "text": "está em uma casa verde",
-      "combinacoes": [
-        19
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 55,
-    "fields": {
-      "text": "a soma dos números é menor que 6",
-      "combinacoes": [
-        19
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 56,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        19
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 57,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        19
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 58,
-    "fields": {
-      "text": "pelo menos um dos números é ímpar",
-      "combinacoes": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 59,
-    "fields": {
-      "text": "o primeiro número é menor que o segundo",
-      "combinacoes": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 60,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 61,
-    "fields": {
-      "text": "está no Q1",
-      "combinacoes": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 62,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 63,
-    "fields": {
-      "text": "a soma dos números é menor que 6",
-      "combinacoes": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 64,
-    "fields": {
-      "text": "O produto entre eles é ímpar",
-      "combinacoes": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 65,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 66,
-    "fields": {
-      "text": "pelo menos um dos números é ímpar",
-      "combinacoes": [
-        25
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 67,
-    "fields": {
-      "text": "o primeiro número é maior que o segundo",
-      "combinacoes": [
-        25
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 68,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        25
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 69,
-    "fields": {
-      "text": "está no Q1",
-      "combinacoes": [
-        25
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 70,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        25
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 71,
-    "fields": {
-      "text": "a soma dos números é menor que 6",
-      "combinacoes": [
-        25
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 72,
-    "fields": {
-      "text": "O produto entre eles é ímpar",
-      "combinacoes": [
-        25
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 73,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        25
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 74,
-    "fields": {
-      "text": "um dos números é par",
-      "combinacoes": [
-        6
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 75,
-    "fields": {
-      "text": "o primeiro número é menor que o segundo",
-      "combinacoes": [
-        6
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 76,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        6
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 77,
-    "fields": {
-      "text": "está no Q1",
-      "combinacoes": [
-        6
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 78,
-    "fields": {
-      "text": "está em uma casa vermelha",
-      "combinacoes": [
-        6
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 79,
-    "fields": {
-      "text": "a soma dos números é maior que 6",
-      "combinacoes": [
-        6
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 80,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        6
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 81,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        6
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 82,
-    "fields": {
-      "text": "um dos números é par",
-      "combinacoes": [
-        31
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 83,
-    "fields": {
-      "text": "o primeiro número é maior que o segundo",
-      "combinacoes": [
-        31
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 84,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        31
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 85,
-    "fields": {
-      "text": "está no Q1",
-      "combinacoes": [
-        31
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 86,
-    "fields": {
-      "text": "está em uma casa vermelha",
-      "combinacoes": [
-        31
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 87,
-    "fields": {
-      "text": "a soma dos números é maior que 6",
-      "combinacoes": [
-        31
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 88,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        31
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 89,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        31
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 90,
-    "fields": {
-      "text": "pelo menos um dos números é par",
-      "combinacoes": [
-        8
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 91,
-    "fields": {
-      "text": "os dois números são pares",
-      "combinacoes": [
-        8
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 92,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        8
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 93,
-    "fields": {
-      "text": "está no Q2",
-      "combinacoes": [
-        8
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 94,
-    "fields": {
-      "text": "está em uma casa vermelha",
-      "combinacoes": [
-        8
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 95,
-    "fields": {
-      "text": "a soma dos números é menor que 6",
-      "combinacoes": [
-        8
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 96,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        8
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 97,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        8
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 98,
-    "fields": {
-      "text": "um dos números é ímpar",
-      "combinacoes": [
-        9
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 99,
-    "fields": {
-      "text": "são números primos",
-      "combinacoes": [
-        9
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 100,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        9
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 101,
-    "fields": {
-      "text": "está no Q2",
-      "combinacoes": [
-        9
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 102,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        9
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 103,
-    "fields": {
-      "text": "a soma dos números é menor que 6",
-      "combinacoes": [
-        9
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 104,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        9
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 105,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        9
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 106,
-    "fields": {
-      "text": "um dos números é ímpar",
-      "combinacoes": [
-        14
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 107,
-    "fields": {
-      "text": "os dois números são primos",
-      "combinacoes": [
-        14
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 108,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        14
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 109,
-    "fields": {
-      "text": "está no Q2",
-      "combinacoes": [
-        14
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 110,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        14
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 111,
-    "fields": {
-      "text": "a soma dos números é menor que 6",
-      "combinacoes": [
-        14
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 112,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        14
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 113,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        14
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 114,
-    "fields": {
-      "text": "pelo menos um dos números é par",
-      "combinacoes": [
-        10
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 115,
-    "fields": {
-      "text": "o primeiro número é menor que o segundo",
-      "combinacoes": [
-        10
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 116,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        10
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 117,
-    "fields": {
-      "text": "está no Q1",
-      "combinacoes": [
-        10
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 118,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        10
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 119,
-    "fields": {
-      "text": "a soma dos números é menor ou igual a 6",
-      "combinacoes": [
-        10
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 120,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        10
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 121,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        10
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 122,
-    "fields": {
-      "text": "pelo menos um dos números é par",
-      "combinacoes": [
-        20
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 123,
-    "fields": {
-      "text": "o primeiro número é maior que o segundo",
-      "combinacoes": [
-        20
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 124,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        20
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 125,
-    "fields": {
-      "text": "está no Q3",
-      "combinacoes": [
-        20
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 126,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        20
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 127,
-    "fields": {
-      "text": "a soma dos números é menor ou igual a 6",
-      "combinacoes": [
-        20
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 128,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        20
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 129,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        20
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 130,
-    "fields": {
-      "text": "pelo menos um dos números é ímpar",
-      "combinacoes": [
-        11
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 131,
-    "fields": {
-      "text": "o primeiro número é menor que o segundo",
-      "combinacoes": [
-        11
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 132,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        11
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 133,
-    "fields": {
-      "text": "está no Q1",
-      "combinacoes": [
-        11
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 134,
-    "fields": {
-      "text": "está em uma casa vermelha",
-      "combinacoes": [
-        11
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 135,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        11
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 136,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        11
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 137,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        11
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 138,
-    "fields": {
-      "text": "pelo menos um dos números é ímpar",
-      "combinacoes": [
-        26
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 139,
-    "fields": {
-      "text": "o primeiro número é maior que o segundo",
-      "combinacoes": [
-        26
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 140,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        26
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 141,
-    "fields": {
-      "text": "está no Q3",
-      "combinacoes": [
-        26
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 142,
-    "fields": {
-      "text": "está em uma casa vermelha",
-      "combinacoes": [
-        26
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 143,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        26
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 144,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        26
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 145,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        26
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 146,
-    "fields": {
-      "text": "pelo menos um dos números é par",
-      "combinacoes": [
-        12
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 147,
-    "fields": {
-      "text": "o primeiro número é divisor do segundo",
-      "combinacoes": [
-        12
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 148,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        12
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 149,
-    "fields": {
-      "text": "está no Q3",
-      "combinacoes": [
-        12
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 150,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        12
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 151,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        12
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 152,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        12
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 153,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        12
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 154,
-    "fields": {
-      "text": "pelo menos um dos números é par",
-      "combinacoes": [
-        32
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 155,
-    "fields": {
-      "text": "o primeiro número é múltiplo do segundo",
-      "combinacoes": [
-        32
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 156,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        32
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 157,
-    "fields": {
-      "text": "está no Q3",
-      "combinacoes": [
-        32
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 158,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        32
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 159,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        32
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 160,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        32
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 161,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        32
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 162,
-    "fields": {
-      "text": "pelo menos um dos números é ímpar",
-      "combinacoes": [
-        15
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 163,
-    "fields": {
-      "text": "os dois números são ímpares",
-      "combinacoes": [
-        15
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 164,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        15
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 165,
-    "fields": {
-      "text": "está no Q2",
-      "combinacoes": [
-        15
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 166,
-    "fields": {
-      "text": "está em uma casa vermelha",
-      "combinacoes": [
-        15
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 167,
-    "fields": {
-      "text": "a soma dos números é menor ou igual a 6",
-      "combinacoes": [
-        15
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 168,
-    "fields": {
-      "text": "O produto entre eles é ímpar",
-      "combinacoes": [
-        15
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 169,
-    "fields": {
-      "text": "os números são iguais",
-      "combinacoes": [
-        15
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 170,
-    "fields": {
-      "text": "um dos números é par",
-      "combinacoes": [
-        16
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 171,
-    "fields": {
-      "text": "o primeiro número é menor que o segundo",
-      "combinacoes": [
-        16
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 172,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        16
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 173,
-    "fields": {
-      "text": "está no Q1",
-      "combinacoes": [
-        16
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 174,
-    "fields": {
-      "text": "está em uma casa vermelha",
-      "combinacoes": [
-        16
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 175,
-    "fields": {
-      "text": "a soma dos números é maior que 6",
-      "combinacoes": [
-        16
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 176,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        16
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 177,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        16
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 178,
-    "fields": {
-      "text": "um dos números é par",
-      "combinacoes": [
-        21
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 179,
-    "fields": {
-      "text": "o primeiro número é maior que o segundo",
-      "combinacoes": [
-        21
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 180,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        21
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 181,
-    "fields": {
-      "text": "está no Q3",
-      "combinacoes": [
-        21
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 182,
-    "fields": {
-      "text": "está em uma casa vermelha",
-      "combinacoes": [
-        21
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 183,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        21
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 184,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        21
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 185,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        21
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 186,
-    "fields": {
-      "text": "pelo menos um dos números é ímpar",
-      "combinacoes": [
-        17
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 187,
-    "fields": {
-      "text": "o primeiro número é menor que o segundo",
-      "combinacoes": [
-        17
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 188,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        17
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 189,
-    "fields": {
-      "text": "está no Q1",
-      "combinacoes": [
-        17
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 190,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        17
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 191,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        17
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 192,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        17
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 193,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        17
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 194,
-    "fields": {
-      "text": "os dois números são primos",
-      "combinacoes": [
-        17
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 195,
-    "fields": {
-      "text": "pelo menos um dos números é ímpar",
-      "combinacoes": [
-        27
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 196,
-    "fields": {
-      "text": "o primeiro número é maior que o segundo",
-      "combinacoes": [
-        27
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 197,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        27
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 198,
-    "fields": {
-      "text": "está no Q3",
-      "combinacoes": [
-        27
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 199,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        27
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 200,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        27
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 201,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        27
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 202,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        27
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 203,
-    "fields": {
-      "text": "os dois números são primos",
-      "combinacoes": [
-        27
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 204,
-    "fields": {
-      "text": "um dos números é ímpar",
-      "combinacoes": [
-        18
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 205,
-    "fields": {
-      "text": "o primeiro número é divisor do segundo",
-      "combinacoes": [
-        18
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 206,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        18
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 207,
-    "fields": {
-      "text": "está no Q1",
-      "combinacoes": [
-        18
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 208,
-    "fields": {
-      "text": "está em uma casa verde",
-      "combinacoes": [
-        18
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 209,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        18
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 210,
-    "fields": {
-      "text": "O produto entre eles é par",
-      "combinacoes": [
-        18
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 211,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        18
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 212,
-    "fields": {
-      "text": "pelo menos um dos números é par",
-      "combinacoes": [
-        22
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 213,
-    "fields": {
-      "text": "os dois números são pares",
-      "combinacoes": [
-        22
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 214,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        22
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 215,
-    "fields": {
-      "text": "está no Q4",
-      "combinacoes": [
-        22
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 216,
-    "fields": {
-      "text": "está em uma casa vermelha",
-      "combinacoes": [
-        22
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 217,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        22
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 218,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        22
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 219,
-    "fields": {
-      "text": "os números são iguais",
-      "combinacoes": [
-        22
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 220,
-    "fields": {
-      "text": "um dos números é ímpar",
-      "combinacoes": [
-        23
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 221,
-    "fields": {
-      "text": "o primeiro número é menor que o segundo",
-      "combinacoes": [
-        23
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 222,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        23
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 223,
-    "fields": {
-      "text": "está no Q4",
-      "combinacoes": [
-        23
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 224,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        23
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 225,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        23
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 226,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        23
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 227,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        23
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 228,
-    "fields": {
-      "text": "um dos números é ímpar",
-      "combinacoes": [
-        28
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 229,
-    "fields": {
-      "text": "o primeiro número é maior que o segundo",
-      "combinacoes": [
-        28
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 230,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        28
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 231,
-    "fields": {
-      "text": "está no Q4",
-      "combinacoes": [
-        28
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 232,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        28
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 233,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        28
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 234,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        28
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 235,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        28
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 236,
-    "fields": {
-      "text": "pelo menos um dos números é par",
-      "combinacoes": [
-        24
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 237,
-    "fields": {
-      "text": "ambos são divisíveis por 2",
-      "combinacoes": [
-        24
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 238,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        24
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 239,
-    "fields": {
-      "text": "está no Q4",
-      "combinacoes": [
-        24
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 240,
-    "fields": {
-      "text": "está em uma casa verde",
-      "combinacoes": [
-        24
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 241,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        24
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 242,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        24
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 243,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        24
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 244,
-    "fields": {
-      "text": "pelo menos um dos números é par",
-      "combinacoes": [
-        34
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 245,
-    "fields": {
-      "text": "ambos são divisíveis por 2",
-      "combinacoes": [
-        34
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 246,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        34
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 247,
-    "fields": {
-      "text": "está no Q4",
-      "combinacoes": [
-        34
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 248,
-    "fields": {
-      "text": "está em uma casa verde",
-      "combinacoes": [
-        34
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 249,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        34
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 250,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        34
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 251,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        34
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 252,
-    "fields": {
-      "text": "pelo menos um dos números é ímpar",
-      "combinacoes": [
-        29
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 253,
-    "fields": {
-      "text": "os dois números são ímpares",
-      "combinacoes": [
-        29
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 254,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        29
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 255,
-    "fields": {
-      "text": "está no Q4",
-      "combinacoes": [
-        29
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 256,
-    "fields": {
-      "text": "está em uma casa vermelha",
-      "combinacoes": [
-        29
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 257,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        29
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 258,
-    "fields": {
-      "text": "O produto entre eles é ímpar",
-      "combinacoes": [
-        29
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 259,
-    "fields": {
-      "text": "os números são iguais",
-      "combinacoes": [
-        29
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 260,
-    "fields": {
-      "text": "um dos números é ímpar",
-      "combinacoes": [
-        30
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 261,
-    "fields": {
-      "text": "o primeiro número é menor que o segundo",
-      "combinacoes": [
-        30
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 262,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        30
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 263,
-    "fields": {
-      "text": "está no Q4",
-      "combinacoes": [
-        30
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 264,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        30
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 265,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        30
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 266,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        30
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 267,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        30
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 268,
-    "fields": {
-      "text": "um dos números é ímpar",
-      "combinacoes": [
-        35
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 269,
-    "fields": {
-      "text": "o primeiro número é maior que o segundo",
-      "combinacoes": [
-        35
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 270,
-    "fields": {
-      "text": "as cores dos números são iguais",
-      "combinacoes": [
-        35
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 271,
-    "fields": {
-      "text": "está no Q4",
-      "combinacoes": [
-        35
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 272,
-    "fields": {
-      "text": "está em uma casa azul",
-      "combinacoes": [
-        35
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 273,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        35
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 274,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        35
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 275,
-    "fields": {
-      "text": "os números são diferentes",
-      "combinacoes": [
-        35
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 276,
-    "fields": {
-      "text": "pelo menos um dos números é par",
-      "combinacoes": [
-        36
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 277,
-    "fields": {
-      "text": "os dois números são pares",
-      "combinacoes": [
-        36
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 278,
-    "fields": {
-      "text": "as cores dos números são diferentes",
-      "combinacoes": [
-        36
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 279,
-    "fields": {
-      "text": "está no Q4",
-      "combinacoes": [
-        36
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 280,
-    "fields": {
-      "text": "está em uma casa vermelha",
-      "combinacoes": [
-        36
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 281,
-    "fields": {
-      "text": "a soma dos números é maior ou igual a 6",
-      "combinacoes": [
-        36
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 282,
-    "fields": {
-      "text": "o produto entre eles é par",
-      "combinacoes": [
-        36
-      ]
-    }
-  },
-  {
-    "model": "probdado.dica",
-    "pk": 283,
-    "fields": {
-      "text": "os números são iguais",
-      "combinacoes": [
-        36
       ]
     }
   }
