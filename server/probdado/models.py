@@ -11,5 +11,27 @@ class Dica(models.Model):
     text = models.CharField(max_length=256)
     combinacoes = models.ManyToManyField(Combinacao)
 
+# ------------------------------------------------------------------------------
+
+class Partida(models.Model):
+    match = models.OneToOneField('core.Match', on_delete=models.CASCADE, primary_key=True)
+    combinacao = models.ForeignKey(Combinacao, on_delete=models.CASCADE)
+
+class Rodada(models.Model):
+    partida = models.ForeignKey(Partida, on_delete=models.CASCADE)
+    dica    = models.ForeignKey(Dica, on_delete=models.CASCADE)
+    estado  = models.IntegerField(default=0)  # máquina de estado: 0:aceitando alternativas (respostas) dos players, 1:feedback, 2:encerrado
+
+class Alternativa(models.Model):
+    rodada  = models.ForeignKey(Rodada, on_delete=models.CASCADE)
+    texto   = models.TextField(max_length=64)
+    correta = models.BooleanField(default=False)
+    ponto   = models.IntegerField()  # Regra de negócio: probabilidade 10 pontos, combinação 50 pontos, combinação errada -10 pontos
+
+class Resposta(models.Model):
+    # Regra de negócio: Protect against multiple selection during the same "Rodada" -- code this rule.
+    player      = models.ForeignKey('core.Player', on_delete=models.CASCADE)
+    alternativa = models.ForeignKey(Alternativa, on_delete=models.CASCADE)
+
 
 
