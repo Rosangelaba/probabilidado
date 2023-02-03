@@ -39,4 +39,11 @@ class Match(models.Model):
     active = models.BooleanField(default=True)
 
 
+class Score(models.Model):
+    match  = models.ForeignKey('Match', on_delete=models.CASCADE)
+    player = models.ForeignKey('Player', on_delete=models.CASCADE)
+    score  = models.IntegerField(default=0)
+
+
+
 

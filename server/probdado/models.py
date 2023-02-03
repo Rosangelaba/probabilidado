@@ -11,3 +11,5 @@ class Dica(models.Model):
     text = models.CharField(max_length=256)
     combinacoes = models.ManyToManyField(Combinacao)
 
+
+
