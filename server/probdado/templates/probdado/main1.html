@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Canvas - jogo</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewpoint" content= "widht=device-width", initial-scale=1.0"/>
+        <style type="text/css" >
+            #desenha{ 
+                border: 10px solid #f00; 
+            }
+        </style>
+    </head>
+    <body>
+
+        <canvas id="desenha" width="500"  height="500p" >
+            <h1>layout </h1>
+            <h3>Erro pagina</h3>
+        </canvas>
+
+        <script type="text/javascript">
+            var canvas=document.getElementById("desenha")
+            var ctx=canvas.getContext('2d')
+
+            //inserindo o texto preto
+            ctx.fillStyle="black";
+            ctx.font = "bold 36px sans-serif"
+                ctx.fillText("1",100,50)
+                ctx.fillText("2",30,190)
+                ctx.fillText("3",240,50)
+                ctx.fillText("4",30,330)
+                ctx.fillText("5",380,50)
+                ctx.fillText("6",30,470)
+            ctx.fill()
+
+            //colorir retangulos pretos
+            ctx.fillStyle="#000"
+                ctx.fillRect(145,5,70,70)
+                ctx.fillRect(285,5,70,70)
+                ctx.fillRect(425,5,70,70)
+               
+                ctx.fillRect(5,75,70,70)
+                ctx.fillRect(5,215,70,70)
+                ctx.fillRect(5,355,70,70)
+
+                ctx.fillRect(355,75,70,70)
+                
+                ctx.fillRect(285,145,70,70)
+                ctx.fillRect(425,145,70,70)
+
+                ctx.fillRect(355,215,70,70)
+
+                ctx.fillRect(145,285,70,70)
+                ctx.fillRect(145,425,70,70)
+                ctx.fillRect(75,355,70,70)
+                ctx.fillRect(215,355,70,70)
+
+            ctx.fill()
+ 
+            //colorir retangulos vermelhos
+            ctx.fillStyle="#f00"
+                ctx.fillRect(215,75,70,70)
+                ctx.fillRect(285,75,70,70)
+
+                ctx.fillRect(75,215,70,70)
+                ctx.fillRect(75,285,70,70)
+
+                ctx.fillRect(425,215,70,70)
+                ctx.fillRect(425,285,70,70)
+
+                ctx.fillRect(215,425,70,70)
+                ctx.fillRect(285,425,70,70)
+            ctx.fill()
+
+            //inserindo o texto branco
+            ctx.fillStyle="white"
+            ctx.font = "bold 36px sans-serif"
+                ctx.fillText("1",30,120)
+                ctx.fillText("2",170,50)
+                ctx.fillText("3",30,260)
+                ctx.fillText("4",310,50)
+                ctx.fillText("5",30,400)
+                ctx.fillText("6",450,50)
+            ctx.fill()
+
+
+            //colorir retangulos verdes
+            ctx.fillStyle="#0f0"
+            ctx.fillRect(75,75,70,70)
+            ctx.fillRect(145,145,70,70)
+            ctx.fillRect(215,215,70,70)
+            ctx.fillRect(285,285,70,70)
+            ctx.fillRect(355,355,70,70)
+            ctx.fillRect(425,425,70,70)
+            ctx.fillRect(425,75,70,70)
+            ctx.fillRect(355,145,70,70)
+            ctx.fillRect(285,215,70,70)
+            ctx.fillRect(215,285,70,70)
+            ctx.fillRect(145,355,70,70)
+            ctx.fillRect(75,425,70,70)
+
+            //quadricular
+            //linha diagonal
+            ctx.moveTo(5,5)
+            ctx.lineTo(75,75)
+            ctx.stroke()
+
+            //linas horizontais
+            ctx.moveTo(5,5)
+            ctx.lineTo(495,5)
+            ctx.stroke()
+
+            ctx.moveTo(5,75)
+            ctx.lineTo(495,75)
+            ctx.stroke()
+
+            ctx.moveTo(5,145)
+            ctx.lineTo(495,145)
+            ctx.stroke()
+
+            ctx.moveTo(5,215)
+            ctx.lineTo(495,215)
+            ctx.stroke()
+
+            ctx.moveTo(5,285)
+            ctx.lineTo(495,285)
+            ctx.stroke()
+
+            ctx.moveTo(5,355)
+            ctx.lineTo(495,355)
+            ctx.stroke()
+
+            ctx.moveTo(5,425)
+            ctx.lineTo(495, 425)
+            ctx.stroke()
+
+            ctx.moveTo(5,495)
+            ctx.lineTo(495, 495)
+            ctx.stroke()
+
+            ctx.moveTo(5,75)
+            ctx.lineTo(495,75)
+            ctx.stroke()
+
+            //linhas verticais
+            ctx.moveTo(5,5)
+            ctx.lineTo(5,495)
+            ctx.stroke()
+
+            ctx.moveTo(75,5)
+            ctx.lineTo(75,495)
+            ctx.stroke()
+
+            ctx.moveTo(145,5)
+            ctx.lineTo(145,495)
+            ctx.stroke()
+
+            ctx.moveTo(215,5)
+            ctx.lineTo(215,495)
+            ctx.stroke()
+
+            ctx.moveTo(285,5)
+            ctx.lineTo(285,495)
+            ctx.stroke()
+
+            ctx.moveTo(355,5)
+            ctx.lineTo(355,495)
+            ctx.stroke()
+
+            ctx.moveTo(425,5)
+            ctx.lineTo(425,495)
+            ctx.stroke()
+
+            ctx.moveTo(495,5)
+            ctx.lineTo(495,495)
+            ctx.stroke()
+        
+        $(function() {
+            console.log( "ready!" );
+            desenha();
+        });
+
+        </script>
+    </body>
+</html>
