@@ -187,23 +187,11 @@
     </canvas>
 
 
-    <br />Dica: <b>{{rodada.dica}}</b>
-    {% for alternativa in rodada.alternativa_set.all %}
-        <br />
-        {% if rodada.estado == 1 and alternativa.correta %}
-            <div class="alert alert-success" role="alert">
-        {% else %}
-            <div class="alert alert-primary" role="alert">
-        {% endif %}
-
-            {{alternativa.texto}}
-
-        </div>
+    <br /><b>{{object}}</b>
+    <br /><b>{{object.combinacao}}</b>
+    {% for dica in object.combinacao.dica_set.all %}
+        <br />{{dica}}
     {% endfor %}
-
-    <a class="btn btn-info" href="">Próxima Dica (Rodada) >></a>
-    <a class="btn btn-info" href="{% url 'probdado:novacombinacao' room_pk=rodada.partida.match.room.id %}">Nova Combinação >></a>
-
 {% endblock %}
 
 

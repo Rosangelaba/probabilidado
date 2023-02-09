@@ -17,6 +17,9 @@ class Game(models.Model):
     app = models.CharField(max_length=32)
     max_players = models.IntegerField(default=4)
 
+    def __str__(self):
+        return "{name} ({app}): {mp}".format(name = self.name, app = self.app, mp = self.max_players)
+
 
 class Room(models.Model):
     owner    = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -26,9 +29,12 @@ class Room(models.Model):
     def create_room(self, game, owner):
         pass
 
+    def __str__(self):
+        return self.code
+
 
 class Player(models.Model):
-    # YKL: check how to do it with sessions!
+    # YKL: check how to do it with sessions! Add name
     room = models.ManyToManyField(Room)
     active   = models.BooleanField(default=True)
 
@@ -37,6 +43,9 @@ class Match(models.Model):
     room   = models.ForeignKey(Room, on_delete=models.CASCADE)
     game   = models.ForeignKey(Game, on_delete=models.CASCADE)
     active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return "{gm}: {rc}".format(gm = self.game.name, rc = self.room.code)
 
 
 class Score(models.Model):

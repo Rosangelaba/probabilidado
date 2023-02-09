@@ -185,25 +185,6 @@
     <canvas id="desenho" width="500" height="500" style="border:1px solid #000;">
         <h1> Probabilidado</h1>
     </canvas>
-
-
-    <br />Dica: <b>{{rodada.dica}}</b>
-    {% for alternativa in rodada.alternativa_set.all %}
-        <br />
-        {% if rodada.estado == 1 and alternativa.correta %}
-            <div class="alert alert-success" role="alert">
-        {% else %}
-            <div class="alert alert-primary" role="alert">
-        {% endif %}
-
-            {{alternativa.texto}}
-
-        </div>
-    {% endfor %}
-
-    <a class="btn btn-info" href="">Próxima Dica (Rodada) >></a>
-    <a class="btn btn-info" href="{% url 'probdado:novacombinacao' room_pk=rodada.partida.match.room.id %}">Nova Combinação >></a>
-
 {% endblock %}
 
 
