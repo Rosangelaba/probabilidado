@@ -187,6 +187,8 @@
     </canvas>
 
 
+    <b>TODO: Listar dicas antigas</b>
+
     <br />Dica: <b>{{rodada.dica}}</b>
     {% for alternativa in rodada.alternativa_set.all %}
         <br />
@@ -201,8 +203,15 @@
         </div>
     {% endfor %}
 
-    <a class="btn btn-info" href="">Próxima Dica (Rodada) >></a>
-    <a class="btn btn-info" href="{% url 'probdado:novacombinacao' room_pk=rodada.partida.match.room.id %}">Nova Combinação >></a>
+    <br />
+
+    {% if rodada.estado == 0 %}
+        <a class="btn btn-success" href="{% url 'probdado:revelar' rodada_pk=rodada.id %}">Revelar >></a>
+    {% else %}
+        <a class="btn btn-info" href="{% url 'probdado:novarodada' match_pk=rodada.partida.match.id %}">Próxima Dica (Rodada) >></a>
+
+        <a class="btn btn-info" href="{% url 'probdado:novacombinacao' room_pk=rodada.partida.match.room.id %}">Nova Combinação >></a>
+    {% endif %}
 
 {% endblock %}
 
